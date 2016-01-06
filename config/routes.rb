@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'reader/index'
+
   get 'upload/index'
 
   resources :companies
