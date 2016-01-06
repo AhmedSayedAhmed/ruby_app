@@ -1,6 +1,5 @@
 class TxtFilesController < ApplicationController
   before_action :set_txt_file, only: [:show, :edit, :update, :destroy]
-
   # GET /txt_files
   # GET /txt_files.json
   def index
@@ -24,7 +23,16 @@ class TxtFilesController < ApplicationController
   # POST /txt_files
   # POST /txt_files.json
   def create
-    @txt_file = TxtFile.new(txt_file_params)
+    # Capturing the object file
+    uploaded_io = params[:txt_file][:file]
+    # writing the file to disk
+    File.open(Rails.root.join('uploads', uploaded_io.original_filename), 'wb') do |file|
+      file.write(uploaded_io.read)
+    end
+    filename = uploaded_io.original_filename
+    path = Rails.root.join('uploads', uploaded_io.original_filename)
+
+    @txt_file = TxtFile.new(:name => filename, :path => path)
 
     respond_to do |format|
       if @txt_file.save
@@ -62,13 +70,14 @@ class TxtFilesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_txt_file
-      @txt_file = TxtFile.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def txt_file_params
-      params.require(:txt_file).permit(:name, :path)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_txt_file
+    @txt_file = TxtFile.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def txt_file_params
+    params.require(:txt_file).permit(:file)
+  end
 end

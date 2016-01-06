@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'upload/index'
+
   resources :companies
   resources :txt_files
   get 'home/index'

@@ -363,3 +363,1204 @@ Processing by CompaniesController#new as HTML
   Rendered companies/_form.html.erb (2.8ms)
   Rendered companies/new.html.erb within layouts/application (4.0ms)
 Completed 200 OK in 18ms (Views: 17.0ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2016-01-06 21:46:26 +0200
+Processing by CompaniesController#new as HTML
+  Rendered companies/_form.html.erb (1.5ms)
+  Rendered companies/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 15.4ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-06 21:47:33 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000246214s
+  Rendered companies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 13.8ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2016-01-06 21:47:35 +0200
+Processing by CompaniesController#new as HTML
+  Rendered companies/_form.html.erb (0.9ms)
+  Rendered companies/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 11.5ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2016-01-06 21:51:02 +0200
+Processing by CompaniesController#new as HTML
+  Rendered companies/_form.html.erb (1.9ms)
+  Rendered companies/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 62ms (Views: 61.6ms)
+
+
+Started GET "/aplication" for 127.0.0.1 at 2016-01-06 21:51:42 +0200
+
+ActionController::RoutingError (No route matches [GET] "/aplication"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 21:51:51 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26ms (Views: 21.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 21:53:16 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 28ms (Views: 27.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:03:49 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 114ms (Views: 114.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 15.9ms)
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:10 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.6ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:24 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 72ms (Views: 71.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:33 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 11.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:04:42 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.9ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:05:04 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:09:29 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 274ms (Views: 273.1ms)
+
+
+Started GET "/assets/upload.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:09:29 +0200
+
+
+Started GET "/assets/upload.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:09:29 +0200
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-06 22:09:33 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000258899s
+  Rendered companies/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 15.4ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-06 22:09:38 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00019109s
+  Rendered companies/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 12.7ms)
+
+
+Started GET "/upload" for 127.0.0.1 at 2016-01-06 22:09:55 +0200
+
+ActionController::RoutingError (No route matches [GET] "/upload"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.3ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:10:17 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:11:10 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (24.9ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined local variable or method `upload_path' for #<#<Class:0x007f2f1189f3e0>:0x007f2f118f4ed0>):
+     9: 
+    10: <%= link_to 'Show crawled pages', companies_path %>
+    11: 
+    12: <%= link_to 'Upload a new file', upload_path %>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___439404149428829594_69920067468720'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.1ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:11:19 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 16.1ms)
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/upload.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/upload.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:11:20 +0200
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:11:23 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:15:52 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 30.8ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:15:54 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for @txt_file do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920072196620'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.1ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.6ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:15:54 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (50.2ms)
+Completed 500 Internal Server Error in 52ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for @txt_file do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920071115360'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (50.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.0ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.6ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:16:15 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for @txt_files do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920063147720'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.6ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:16:52 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for (@txt_files) do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920069514120'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.8ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.8ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:16:56 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for (@txt_file) do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920071851060'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (71.4ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:17:15 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for(@txt_file) do |f| %>
+    10:   <% if @txt_file.errors.any? %>
+    11:     <div id="error_explanation">
+    12:       <h2><%= pluralize(@txt_file.errors.count, "error") %> prohibited this txt_file from being saved:</h2>
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920231430060'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.7ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.7ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:18:21 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `txt_file' for #<#<Class:0x007f2f24318120>:0x007f2f11a9c328>):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for txt_file.new do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920068286500'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.8ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.3ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:18:28 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `txt_files' for #<#<Class:0x007f2f24318120>:0x007f2f249b8c50>):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for txt_files.new do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920227216320'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.8ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.7ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:18:35 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `new' for nil:NilClass):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for @txt_files.new do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920070385420'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.1ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.0ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.1ms)
+
+
+Started GET "/upload/index" for 127.0.0.1 at 2016-01-06 22:18:38 +0200
+Processing by UploadController#index as HTML
+  Rendered upload/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `new' for nil:NilClass):
+     6: Supported format is: TXT files
+     7: <br>
+     8: 
+     9: <%= form_for @txt_file.new do |f| %>
+    10:   <%= f.file_field :picture %>
+    11: <% end %>
+    12: 
+  app/views/upload/index.html.erb:9:in `_app_views_upload_index_html_erb___2072032896250630641_69920072043300'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.8ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (68.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:20:01 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (26.1ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined local variable or method `txt_files_new_path' for #<#<Class:0x007f2f1189f3e0>:0x007f2f109e0278>):
+     9: 
+    10: <%= link_to 'Show crawled pages', companies_path %>
+    11: 
+    12: <%= link_to 'Upload a new file', txt_files_new_path %>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___439404149428829594_69920059767440'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.6ms)
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:20:23 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:20:24 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:20:24 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:20:24 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:20:24 +0200
+
+
+Started GET "/assets/upload.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:20:24 +0200
+
+
+Started GET "/assets/upload.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:20:24 +0200
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-06 22:20:25 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (2.0ms)
+  Rendered txt_files/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 20.4ms)
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-06 22:22:42 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (10.6ms)
+  Rendered txt_files/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 23ms (Views: 22.6ms)
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (1.4ms)
+  Rendered txt_files/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 16ms (Views: 15.6ms)
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/upload.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/upload.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:24:52 +0200
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (1.2ms)
+  Rendered txt_files/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/upload.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/assets/upload.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-06 22:25:21 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:35:48 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 69ms (Views: 17.1ms)
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-06 22:35:50 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (1.5ms)
+  Rendered txt_files/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 15.6ms)
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-06 22:35:59 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pDkyG/RKyVzVD6u0DBaXQ2feZWXNLR4ZtdDSqzdxAtliVEJ75asgrhiCA+NPSh24FGn09OgSvDAlxkWutCb6qA==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f2f11f323d8 @tempfile=#<Tempfile:/tmp/RackMultipart20160106-6657-16c92fu>, @original_filename="Untitled Document 1", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"Untitled Document 1\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 1ms
+
+Errno::ENOENT (No such file or directory - /home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/public/uploads/Untitled Document 1):
+  app/controllers/txt_files_controller.rb:29:in `initialize'
+  app/controllers/txt_files_controller.rb:29:in `open'
+  app/controllers/txt_files_controller.rb:29:in `create'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f2f220d8bc8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f2f220d8880 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f2f220dd3f8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-06 22:39:00 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pDkyG/RKyVzVD6u0DBaXQ2feZWXNLR4ZtdDSqzdxAtliVEJ75asgrhiCA+NPSh24FGn09OgSvDAlxkWutCb6qA==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f2f11cd8e98 @tempfile=#<Tempfile:/tmp/RackMultipart20160106-6657-iqaql>, @original_filename="Untitled Document 1", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"Untitled Document 1\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (wrong number of arguments (2 for 0..1)):
+  app/controllers/txt_files_controller.rb:35:in `new'
+  app/controllers/txt_files_controller.rb:35:in `create'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f2f220d8bc8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f2f220d8880 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f2f220dd3f8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-06 22:43:16 +0200
+
+SyntaxError (/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/app/controllers/txt_files_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/txt_files_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f2f220d8bc8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f2f220d8880 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f2f220dd3f8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-06 22:46:32 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pDkyG/RKyVzVD6u0DBaXQ2feZWXNLR4ZtdDSqzdxAtliVEJ75asgrhiCA+NPSh24FGn09OgSvDAlxkWutCb6qA==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f2f11625218 @tempfile=#<Tempfile:/tmp/RackMultipart20160106-6657-102jcll>, @original_filename="Untitled Document 1", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"Untitled Document 1\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `original_filename' for :uploaded_io:Symbol):
+  app/controllers/txt_files_controller.rb:35:in `create'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (11.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f2f220d8bc8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f2f220d8880 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f2f220dd3f8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-06 22:47:09 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pDkyG/RKyVzVD6u0DBaXQ2feZWXNLR4ZtdDSqzdxAtliVEJ75asgrhiCA+NPSh24FGn09OgSvDAlxkWutCb6qA==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f2f111db518 @tempfile=#<Tempfile:/tmp/RackMultipart20160106-6657-1ms130m>, @original_filename="Untitled Document 1", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"Untitled Document 1\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Upload"}
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/txt_files_controller.rb:35:in `create'
+
+
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/ahmed/.rbenv/versions/2.0.0-p647/lib/ruby/gems/2.0.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (11.7ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f2f220d8bc8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f2f220d8880 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f2f220dd3f8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-06 22:49:34 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pDkyG/RKyVzVD6u0DBaXQ2feZWXNLR4ZtdDSqzdxAtliVEJ75asgrhiCA+NPSh24FGn09OgSvDAlxkWutCb6qA==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f2f11489fd0 @tempfile=#<Tempfile:/tmp/RackMultipart20160106-6657-185zypm>, @original_filename="Untitled Document 1", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"Untitled Document 1\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Upload"}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('568d7dde518c5c1a01000000'), "name"=>"Untitled Document 1", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/Untitled Document 1"}], "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.254928673s
+Redirected to http://localhost:3000/txt_files/568d7dde518c5c1a01000000
+Completed 302 Found in 266ms
+
+
+Started GET "/txt_files/568d7dde518c5c1a01000000" for 127.0.0.1 at 2016-01-06 22:49:34 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"568d7dde518c5c1a01000000"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('568d7dde518c5c1a01000000')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00022071000000000002s
+  Rendered txt_files/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 17.3ms)
+
+
+Started GET "/txt_files" for 127.0.0.1 at 2016-01-06 22:49:44 +0200
+Processing by TxtFilesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000560963s
+  Rendered txt_files/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 27.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-06 22:51:18 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 97ms (Views: 96.6ms)
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-06 22:51:21 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (1.7ms)
+  Rendered txt_files/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 25.6ms)
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-06 22:51:31 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jL5IsvGkAbv7qqXrZo+qgpSlNCBrftqHxVwaQMye/HhK0zjS4EXoSTYnDbwl0yB55xKlsU5BeK5VSo1FT8kECQ==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f2f11fadbf0 @tempfile=#<Tempfile:/tmp/RackMultipart20160106-6657-1c3n1kl.txt>, @original_filename="test.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('568d7e53518c5c1a01000001'), "name"=>"test.txt", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/test.txt"}], "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000365327s
+Redirected to http://localhost:3000/txt_files/568d7e53518c5c1a01000001
+Completed 302 Found in 8ms
+
+
+Started GET "/txt_files/568d7e53518c5c1a01000001" for 127.0.0.1 at 2016-01-06 22:51:31 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"568d7e53518c5c1a01000001"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('568d7e53518c5c1a01000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000410612s
+  Rendered txt_files/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 11.3ms)
+
+
+Started GET "/txt_files" for 127.0.0.1 at 2016-01-06 22:51:34 +0200
+Processing by TxtFilesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000276785s
+  Rendered txt_files/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.7ms)
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-06 22:51:39 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (1.3ms)
+  Rendered txt_files/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms)
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-06 22:51:46 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jyVtj0v4ITMI79VafhBHo6CNLkbzKOLKwkltTULZbqlJSB3vWhnIwcVifQ09TM1Y0zq/19YXQONSX/pIwY6W2A==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f2f11f30470 @tempfile=#<Tempfile:/tmp/RackMultipart20160106-6657-b3pbej.txt>, @original_filename="test.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('568d7e62518c5c1a01000002'), "name"=>"test.txt", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/test.txt"}], "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000294461s
+Redirected to http://localhost:3000/txt_files/568d7e62518c5c1a01000002
+Completed 302 Found in 2ms
+
+
+Started GET "/txt_files/568d7e62518c5c1a01000002" for 127.0.0.1 at 2016-01-06 22:51:46 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"568d7e62518c5c1a01000002"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('568d7e62518c5c1a01000002')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021212s
+  Rendered txt_files/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 12.8ms)
+
+
+Started GET "/txt_files" for 127.0.0.1 at 2016-01-06 22:51:48 +0200
+Processing by TxtFilesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00025329s
+  Rendered txt_files/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 14.1ms)
+
+
+Started DELETE "/txt_files/568d7e62518c5c1a01000002" for 127.0.0.1 at 2016-01-06 22:52:20 +0200
+Processing by TxtFilesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vLiRcgn2shGlzToGaXd/NU+DsfLif9K62V0IUIg5GY961eESGBdb42hAklEqK/XOPDQgY8dAcJNJS59VC27h/g==", "id"=>"568d7e62518c5c1a01000002"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('568d7e62518c5c1a01000002')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00028651699999999997s
+MONGODB | localhost:27017 | rails_app_development.delete | STARTED | {"delete"=>"txt_files", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('568d7e62518c5c1a01000002')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.delete | SUCCEEDED | 0.000501708s
+Redirected to http://localhost:3000/txt_files
+Completed 302 Found in 4ms
+
+
+Started GET "/txt_files" for 127.0.0.1 at 2016-01-06 22:52:20 +0200
+Processing by TxtFilesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000216201s
+  Rendered txt_files/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 13ms (Views: 12.3ms)
+
+
+Started DELETE "/txt_files/568d7e53518c5c1a01000001" for 127.0.0.1 at 2016-01-06 22:52:22 +0200
+Processing by TxtFilesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"W8oYLQARlCw1gfG1FUYK2USzTkgHJDrBh/0sdXbaUWWdp2hNEfB93vgMWeJWGoAiNwTf2SIbmOgX67tw9Y2pFA==", "id"=>"568d7e53518c5c1a01000001"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('568d7e53518c5c1a01000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000229848s
+MONGODB | localhost:27017 | rails_app_development.delete | STARTED | {"delete"=>"txt_files", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('568d7e53518c5c1a01000001')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.delete | SUCCEEDED | 0.000232271s
+Redirected to http://localhost:3000/txt_files
+Completed 302 Found in 2ms
+
+
+Started GET "/txt_files" for 127.0.0.1 at 2016-01-06 22:52:22 +0200
+Processing by TxtFilesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00040424600000000003s
+  Rendered txt_files/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 73ms (Views: 72.9ms)
+
+
+Started DELETE "/txt_files/568d7dde518c5c1a01000000" for 127.0.0.1 at 2016-01-06 22:52:25 +0200
+Processing by TxtFilesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OTWC5BVEqsrmM1dGbefh1r/+nXfY1x2gImG8P3SjjSj/WPKEBKVDOCu+/xEuu2stzEkM5v3ov4mydys69/R1WQ==", "id"=>"568d7dde518c5c1a01000000"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('568d7dde518c5c1a01000000')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021185100000000002s
+MONGODB | localhost:27017 | rails_app_development.delete | STARTED | {"delete"=>"txt_files", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('568d7dde518c5c1a01000000')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.delete | SUCCEEDED | 0.000220835s
+Redirected to http://localhost:3000/txt_files
+Completed 302 Found in 2ms
+
+
+Started GET "/txt_files" for 127.0.0.1 at 2016-01-06 22:52:25 +0200
+Processing by TxtFilesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000182834s
+  Rendered txt_files/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 12.0ms)
