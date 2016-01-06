@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Txt Files</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Path</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @txt_files.each do |txt_file| %>
+      <tr>
+        <td><%= txt_file.name %></td>
+        <td><%= txt_file.path %></td>
+        <td><%= link_to 'Show', txt_file %></td>
+        <td><%= link_to 'Edit', edit_txt_file_path(txt_file) %></td>
+        <td><%= link_to 'Destroy', txt_file, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Txt file', new_txt_file_path %>

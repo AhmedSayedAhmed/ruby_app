@@ -1,0 +1,25 @@
+<%= form_for(@txt_file) do |f| %>
+  <% if @txt_file.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@txt_file.errors.count, "error") %> prohibited this txt_file from being saved:</h2>
+
+      <ul>
+      <% @txt_file.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :path %><br>
+    <%= f.text_field :path %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
