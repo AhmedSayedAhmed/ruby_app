@@ -10,14 +10,11 @@ class Crawler
   def initialize (filename)
 
     # Setting up the user agent
-  agent = WWW::Mechanize.new
+  agent = Mechanize.new
       
   path = Rails.root+'uploads'+ filename
-  puts path
-  puts "====================="
-  
     # reading the text file
-    File.read(path.to_s) do |f|
+        File.open(path, "r") do |f|
 
       f.each_line do |line|
 
@@ -27,7 +24,9 @@ class Crawler
 
           ###############
           # for testing, will be removed later
-          puts line
+          # puts line
+          # puts "============================"
+  
           ###############
 
           # Sending the URI to be crawled for data
