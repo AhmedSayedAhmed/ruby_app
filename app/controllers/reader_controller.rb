@@ -1,7 +1,8 @@
+require "#{Rails.root}/app/workers/HardWorker.rb"
+
 class ReaderController < ApplicationController
-  def index
-    # main method that contains the program logic
-    require_relative 'mechanize/crawler'
-    newJob = Crawler.new('websites.txt')
+  def index    
+    @theWorker = HardWorker.new
+    @theWorker.perform
   end
 end

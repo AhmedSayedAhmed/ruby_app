@@ -29,15 +29,21 @@ class TxtFilesController < ApplicationController
     File.open(Rails.root.join('uploads', uploaded_io.original_filename), 'wb') do |file|
       file.write(uploaded_io.read)
     end
+
+    # adding the filename and path to database
     filename = uploaded_io.original_filename
     path = Rails.root.join('uploads', uploaded_io.original_filename)
-
     @txt_file = TxtFile.new(:name => filename, :path => path)
 
     respond_to do |format|
       if @txt_file.save
         format.html { redirect_to @txt_file, notice: 'Txt file was successfully created.' }
         format.json { render :show, status: :created, location: @txt_file }
+
+        # push all links in the database
+        require "#{Rails.root}/app/fileReader.rb"
+        reader = FileReader.new
+        reader.readFile(@txt_file.path.to_s)
       else
         format.html { render :new }
         format.json { render json: @txt_file.errors, status: :unprocessable_entity }
@@ -45,8 +51,6 @@ class TxtFilesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /txt_files/1
-  # PATCH/PUT /txt_files/1.json
   def update
     respond_to do |format|
       if @txt_file.update(txt_file_params)
@@ -62,6 +66,7 @@ class TxtFilesController < ApplicationController
   # DELETE /txt_files/1
   # DELETE /txt_files/1.json
   def destroy
+    #File.delete(@txt_file.path)
     @txt_file.destroy
     respond_to do |format|
       format.html { redirect_to txt_files_url, notice: 'Txt file was successfully destroyed.' }
@@ -80,4 +85,5 @@ class TxtFilesController < ApplicationController
   def txt_file_params
     params.require(:txt_file).permit(:file)
   end
+
 end
