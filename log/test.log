@@ -1,0 +1,54 @@
+-------------------------------------------
+ReaderControllerTest: test_should_get_index
+-------------------------------------------
+Processing by ReaderController#index as HTML
+  Rendered reader/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 243ms (Views: 243.1ms)
+--------------------------------------------
+CompaniesControllerTest: test_should_get_new
+--------------------------------------------
+----------------------------------------------
+CompaniesControllerTest: test_should_get_index
+----------------------------------------------
+---------------------------------------------------
+CompaniesControllerTest: test_should_update_company
+---------------------------------------------------
+---------------------------------------------------
+CompaniesControllerTest: test_should_create_company
+---------------------------------------------------
+-------------------------------------------------
+CompaniesControllerTest: test_should_show_company
+-------------------------------------------------
+---------------------------------------------
+CompaniesControllerTest: test_should_get_edit
+---------------------------------------------
+----------------------------------------------------
+CompaniesControllerTest: test_should_destroy_company
+----------------------------------------------------
+-------------------------------------------
+TxtFilesControllerTest: test_should_get_new
+-------------------------------------------
+---------------------------------------------------
+TxtFilesControllerTest: test_should_update_txt_file
+---------------------------------------------------
+---------------------------------------------------
+TxtFilesControllerTest: test_should_create_txt_file
+---------------------------------------------------
+---------------------------------------------
+TxtFilesControllerTest: test_should_get_index
+---------------------------------------------
+-------------------------------------------------
+TxtFilesControllerTest: test_should_show_txt_file
+-------------------------------------------------
+----------------------------------------------------
+TxtFilesControllerTest: test_should_destroy_txt_file
+----------------------------------------------------
+--------------------------------------------
+TxtFilesControllerTest: test_should_get_edit
+--------------------------------------------
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 4.4ms)

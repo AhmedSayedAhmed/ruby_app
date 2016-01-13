@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
+# Using Sideqik for background handling of threads
+gem 'sidekiq'
+
 # configuring for mongoDB
 gem 'mongoid', '~> 5.0'
 gem 'bson_ext'
@@ -31,9 +34,6 @@ gem 'jbuilder', '~> 2.0'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Using Sideqik for background handling of threads
-gem 'sidekiq'
 
 # Call 'debugger' anywhere in the code to stop execution and get a debugger console
 gem 'pry-byebug'

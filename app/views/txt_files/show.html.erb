@@ -1,13 +1,25 @@
-<p id="notice"><%= notice %></p>
+<p id="notice">
+	<%= notice %>
+
+</p>
+
+
+	Website URLs are extracted successfully and pushed into the database.
+<br />
+	A Job has been scheduled in the background to update the database with live data from Facebook.
+	<br />
+
+	Please make sure you type: bundle exec sidekiq in the Terminal window if you have not done so for this session
+
 
 <p>
-  <strong>Name:</strong>
-  <%= @txt_file.name %>
+	<strong>Name:</strong>
+	<%= @txt_file.name %>
 </p>
 
 <p>
-  <strong>Path:</strong>
-  <%= @txt_file.path %>
+	<strong>Path:</strong>
+	<%= @txt_file.path %>
 </p>
 
 <%= link_to 'Edit', edit_txt_file_path(@txt_file) %> |
