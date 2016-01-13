@@ -10,6 +10,7 @@ gem 'sidekiq'
 # configuring for mongoDB
 gem 'mongoid', '~> 5.0'
 gem 'bson_ext'
+gem "moped", github: "mongoid/moped"
 
 # Using Mechaniaze
 gem 'mechanize'

@@ -5,17 +5,21 @@ require "#{Rails.root}/app/controllers/mechanize/crawler"
 class HardWorker
 	include Sidekiq::Worker
 	# main method that contains the program logic
-	def perform(url)
+	def perform(company_id)
 
-		# Checking the url and the server first
-		if check_link?(url)
+		aCompany = Company.find(Moped::BSON::ObjectId(company_id))
 
-			# Passing the company to the crawled to populate the missing data
-			newJob = Crawler.new(aCompany)
-		else
-			puts '------------------------------------'
-			puts 'link down'
-			puts '------------------------------------'
+		if (aCompany != nil)
+			# Checking the url and the server first
+			if check_link?(aCompany.link)
+
+				# Passing the company to the crawled to populate the missing data
+				newJob = Crawler.new(company_id)
+			else
+				aCompany.name = 'Server Down'
+				aCompany.fblink = 'N/A'
+				aCompany.save
+			end
 		end
 	end
 
@@ -57,7 +61,7 @@ class HardWorker
 
 			rescue getaddrinfo
 			#
-			   false
+			false
 
 			end
 
