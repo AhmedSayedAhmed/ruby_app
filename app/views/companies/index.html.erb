@@ -9,6 +9,7 @@
 		<tr>
 			<th>Name</th>
 			<th>Link</th>
+			<th>description</th>
 			<th>fblink</th>
 			<th>Data</th>
 			<th colspan="10"></th>
@@ -20,8 +21,10 @@
 		<tr>
 			<td><%= company.name %></td>
 			<td><%= company.link %></td>
+			<td><%= company.description %></td>
 			<td><%= company.fblink %></td>
 			<td><%= company.data %></td>
+			
 			<td><%= link_to 'Show', company %></td>
 			<td><%= link_to 'Edit', edit_company_path(company) %></td>
 			<td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -13,9 +13,10 @@ class FileReader
 			# Removing the end of line character
 			line.gsub('\n','')
 
+            # getting the next unique id
 				id = Moped::BSON::ObjectId.new
 
-				unless (Moped::BSON::ObjectId(id.to_s)) == id then
+				until (Moped::BSON::ObjectId(id.to_s)) == id do
 					# getting the next unique id
 					id = Moped::BSON::ObjectId.new
 				end
