@@ -20,9 +20,6 @@ class FileReader
 					id = Moped::BSON::ObjectId.new
 				end
 				
-				# Making sure that encoding is correct
-				line = sanitize_utf8(line)
-
 				# Saving Company in the database
 				aCompany = Company.create :_id => id, :link => line
 

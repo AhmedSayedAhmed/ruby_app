@@ -107,6 +107,7 @@ GEM
     multi_json (1.11.2)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
+    net-ping (1.7.8)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     ntlm-http (0.1.1)
@@ -204,6 +205,7 @@ DEPENDENCIES
   mechanize
   mongoid (~> 5.0)
   moped!
+  net-ping (~> 1.7, >= 1.7.8)
   pry-byebug
   rails (= 4.2.5)
   sass-rails (~> 5.0)

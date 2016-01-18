@@ -15,6 +15,9 @@ gem "moped", github: "mongoid/moped"
 # Using Mechaniaze
 gem 'mechanize'
 
+# Gem to ping sites
+gem 'net-ping', '~> 1.7', '>= 1.7.8'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 

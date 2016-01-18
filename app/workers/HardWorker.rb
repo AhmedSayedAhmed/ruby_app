@@ -1,25 +1,53 @@
 require 'uri'
 require 'net/http'
 require "#{Rails.root}/app/controllers/mechanize/crawler"
+require 'net/ping'
 
 class HardWorker
 	include Sidekiq::Worker
 	# main method that contains the program logic
 	def perform(company_id)
 
+		# Fetching company from databse
 		aCompany = Company.find(Moped::BSON::ObjectId(company_id))
 
+		# if company actually exists, and id is valid
 		if (aCompany != nil)
-			# Checking the url and the server first
-			if check_link?(aCompany.link)
 
-				# Passing the company to the crawled to populate the missing data
-				newJob = Crawler.new(company_id)
-			else
-				aCompany.name = 'Server Down'
-				aCompany.fblink = 'N/A'
+			# Telling the ping class that a refused
+			# connection is a successful ping
+			Net::Ping::TCP.econnrefused = true
+
+			# net ping object
+			p1 = Net::Ping::TCP.new("google.com", 22, 5)
+
+			# Checkin that internet connection is up
+			if p1.ping? == true
+
+				# Checking the url and the server first
+				if check_link?(aCompany.link)
+
+					# Checking if url is already a facebook url
+					if aCompany.link.include? "facebook"
+						aCompany.fblink = aCompany.link
+						aCompany.name = '2bupdated'
+					aCompany.save
+					else
+					# Passing the company to the crawled to populate the missing data
+						newJob = Crawler.new(company_id)
+					end
+				else
+					aCompany.name = 'Server Down'
+					aCompany.fblink = 'N/A'
 				aCompany.save
+				end
+
+			else
+			# Rescheduling for 15 minutes because internet is down
+				puts "No internet connection!"
+				HardWorker.perform_in(15.minutes, company_id)
 			end
+
 		end
 	end
 
@@ -71,5 +99,5 @@ class HardWorker
 		end
 
 	end
-end
 
+end

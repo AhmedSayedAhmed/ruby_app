@@ -23,6 +23,16 @@ Things you may want to cover:
 
 * ...
 
+== TODO
+
+* Edit Company model to add other data (email, social media links)
+* Construct how thinks will look like in the data model
+* Paginate companies
+* check if link is a facebook link
+------------------------------------------------------------------------------------------------------------
+* Add forbidden response to crawler 
+http://stackoverflow.com/questions/13303449/urllib2-httperror-http-error-403-forbidden/13303773#13303773
+-------------------------------------------------------------------------------------------------------------
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
