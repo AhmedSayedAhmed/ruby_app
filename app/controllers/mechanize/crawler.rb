@@ -55,6 +55,17 @@ class Crawler
             end
          end
 
+         emails = Array.new
+
+         page.body.to_s.scan(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i).uniq.each do |mail|
+         #puts'=============================='
+         #puts mail
+            emails << mail.downcase
+         end
+         emails = {emails: emails.uniq}
+         # Create a json object to store the email addresses
+         @theCompany.emails = JSON.parse(emails.to_json)
+
          # Selecting all the links that has social links in it
          fblinks = page.links_with(:href => %r{facebook.com})
          gplinks = page.links_with(:href => %r{plus.google})
@@ -64,31 +75,31 @@ class Crawler
          # saving facebook hrefs in one array
          facebook = Array.new
          fblinks.each do |fb|
-            facebook << fb.href
+            facebook << fb.href.downcase
          end
 
          # saving google plus hrefs in one array
          gplus = Array.new
          gplinks.each do |gp|
-            gplus << gp.href
+            gplus << gp.href.downcase
          end
 
          # saving pinterest hrefs in one array
          pinterest = Array.new
          plinks.each do |p|
-            pinterest << p.href
+            pinterest << p.href.downcase
          end
 
          # saving twitter hrefs in one array
          twitter = Array.new
          twlinks.each do |tw|
-            twitter << tw.href
+            twitter << tw.href.downcase
          end
 
          # Create a json object to store the social media links
-         social_links = {fb: facebook, gp: gplus, pt: pinterest, tw: twitter}
+         social_links = {fb: facebook.uniq, gp: gplus.uniq, pt: pinterest.uniq, tw: twitter.uniq}
          @theCompany.social = JSON.parse(social_links.to_json)
-         #@theCompany.data = socialize(social_links)
+
          socialize(social_links)
       # Save the object in the database
       @theCompany.save
