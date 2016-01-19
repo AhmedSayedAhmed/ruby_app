@@ -13,20 +13,9 @@ class FileReader
 			# Removing the end of line character
 			line.gsub('\n','')
 
-            # getting the next unique id
-				id = Moped::BSON::ObjectId.new
-
-				until (Moped::BSON::ObjectId(id.to_s)) == id do
-					# getting the next unique id
-					id = Moped::BSON::ObjectId.new
-				end
-				
-				# Saving Company in the database
-				aCompany = Company.create :_id => id, :link => line
-				
 				# Scheduling a job for the Hardworker class
 				# to Update the database with crawled values
-				HardWorker.perform_async(id.to_s)
+				HardWorker.perform_async(line)
 			end
 		end
 	end

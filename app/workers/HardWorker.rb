@@ -5,53 +5,69 @@ require 'net/ping'
 
 class HardWorker
    include Sidekiq::Worker
+
+   # No retries
+   sidekiq_options :retry => false
    # main method that contains the program logic
-   def perform(company_id)
+   def perform(line)
 
-      # Fetching company from databse
-      aCompany = Company.find(Moped::BSON::ObjectId(company_id))
+      # Telling the ping class that a refused
+      # connection is a successful ping
+      Net::Ping::TCP.econnrefused = true
 
-      # if company actually exists, and id is valid
-      if (aCompany != nil)
+      # net ping object
+      p1 = Net::Ping::TCP.new("google.com", 22, 5)
 
-         # Telling the ping class that a refused
-         # connection is a successful ping
-         Net::Ping::TCP.econnrefused = true
+      # Checkin that internet connection is up
+      if p1.ping? == true
 
-         # net ping object
-         p1 = Net::Ping::TCP.new("google.com", 22, 5)
+         # Checking if url is already a social media url
+         if line.include?("facebook") || line.include?("pinterest") || line.include?("twitter") || line.include?("google")
 
-         # Checkin that internet connection is up
-         if p1.ping? == true
+            # Marking the company for the crawler
+            name = '2bupdated'
 
-            # Checking if url is already a social media url
-            if aCompany.link.include?("facebook") || aCompany.link.include?("pinterest") || aCompany.link.include?("twitter") || aCompany.link.include?("google")
-               # Marking the company for the crawler
-               aCompany.name = '2bupdated'
-               aCompany.save
+            # Saving Company in the database
+            @company = Company.new(:name => name, :link => line)
+            @company.save
 
-               # Passing the company to the crawled to populate the missing data
-               newJob = Crawler.new(company_id)
-            else
+            # Passing the company to the crawled to populate the missing data
+            newJob = Crawler.new(@company)
+         else
 
-            # Checking the url and the server first
-               if check_link?(aCompany.link)
+         # if link is missing the http:// request
+            if line.downcase.start_with?("www")
+               newlink = "http://" + line
+               @company = Company.new(:name => name, :link => newlink)
+            @company.save
 
-                  # Passing the company to the crawled to populate the missing data
-                  newJob = Crawler.new(company_id)
+            else if line.downcase.start_with?("http")
+                  @company = Company.new(:name => name, :link => line)
+               @company.save
 
                else
-                  aCompany.name = 'Server Down'
-               aCompany.save
+                  newlink = "http://www." + line
+                  @company = Company.new(:name => name, :link => newlink)
+               @company.save
+
                end
             end
 
-         else
-         # Rescheduling for 15 minutes because internet is down
-            HardWorker.perform_in(15.minutes, company_id)
+            # Checking the url and the server first
+            if check_link?(@company.link) == true
+               # Passing the company to the crawled to populate the missing data
+               newJob = Crawler.new(@company)
+            else
+               @company.name = 'Server Down'
+            @Company.save
+            end
          end
 
+      else
+      # Rescheduling for 15 minutes because internet is down
+         HardWorker.perform_in(15.minutes, line)
       end
+
    end
 
    def check_link?(url_string)
@@ -67,7 +83,6 @@ class HardWorker
          end
 
          begin
-
             req = Net::HTTP.new(url.host, url.port)
             res = req.request_head(url.path || '/')
             req.use_ssl = (url.scheme == 'https')
@@ -79,14 +94,28 @@ class HardWorker
             true
             end
 
-=begin
-Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
-Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
-=end
+         rescue Errno::ENOENT
+            false #false if can't find the server
 
-         rescue Errno::ENOENT, Timeout::Error, SocketError, getaddrinfo
-         false #false if can't find the server
+         rescue Errno::ECONNRESET
+            false
 
+         rescue Timeout::Error
+         # timeout connecting to server
+            false
+
+         rescue Errno::TooManyRedirects
+            false
+
+         rescue SocketError
+         # unknown server
+            false
+
+         rescue getaddrinfo
+            false
+
+         rescue Exception => e
+         false
          end
 
       else
