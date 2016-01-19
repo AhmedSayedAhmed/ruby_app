@@ -32,6 +32,7 @@ Things you may want to cover:
 ------------------------------------------------------------------------------------------------------------
 * Add forbidden response to crawler 
 http://stackoverflow.com/questions/13303449/urllib2-httperror-http-error-403-forbidden/13303773#13303773
+http://stuff-things.net/2010/08/13/handling-403-forbidden-login-pages-with-ruby-mechanize/
 -------------------------------------------------------------------------------------------------------------
 
 Please feel free to use a different markup language if you do not plan to run

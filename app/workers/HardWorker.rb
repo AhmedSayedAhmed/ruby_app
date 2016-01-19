@@ -24,22 +24,27 @@ class HardWorker
          # Checkin that internet connection is up
          if p1.ping? == true
 
-            # Checking the url and the server first
-            if check_link?(aCompany.link)
-
-               # Checking if url is already a facebook url
-               if aCompany.link.include? "facebook"
-                  aCompany.fblink = aCompany.link
-                  aCompany.name = '2bupdated'
+            # Checking if url is already a social media url
+            if aCompany.link.include?("facebook") || aCompany.link.include?("pinterest") || aCompany.link.include?("twitter") || aCompany.link.include?("google")
+               # Marking the company for the crawler
+               aCompany.name = '2bupdated'
                aCompany.save
-               else
+
                # Passing the company to the crawled to populate the missing data
-                  newJob = Crawler.new(company_id)
-               end
+               newJob = Crawler.new(company_id)
             else
-               aCompany.name = 'Server Down'
-               aCompany.fblink = 'N/A'
-            aCompany.save
+
+            # Checking the url and the server first
+               if check_link?(aCompany.link)
+
+                  # Passing the company to the crawled to populate the missing data
+                  newJob = Crawler.new(company_id)
+
+               else
+                  aCompany.name = 'Server Down'
+                  aCompany.fblink = 'N/A'
+               aCompany.save
+               end
             end
 
          else
@@ -75,20 +80,13 @@ class HardWorker
             true
             end
 
-         rescue Errno::ENOENT
-            false #false if can't find the server
+=begin
+Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError,
+Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+=end
 
-         rescue Timeout::Error
-         # timeout connecting to server
-            false
-
-         rescue SocketError
-         # unknown server
-            false
-
-         rescue getaddrinfo
-         #
-         false
+         rescue Errno::ENOENT, Timeout::Error, SocketError, getaddrinfo
+         false #false if can't find the server
 
          end
 

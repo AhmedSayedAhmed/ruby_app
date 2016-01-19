@@ -23,7 +23,7 @@ class FileReader
 				
 				# Saving Company in the database
 				aCompany = Company.create :_id => id, :link => line
-
+				
 				# Scheduling a job for the Hardworker class
 				# to Update the database with crawled values
 				HardWorker.perform_async(id.to_s)
