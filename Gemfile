@@ -41,6 +41,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Call 'debugger' anywhere in the code to stop execution and get a debugger console
 gem 'pry-byebug'
+
+# Using the twitter gem
+gem 'twitter'
     
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

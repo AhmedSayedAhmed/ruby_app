@@ -58,8 +58,6 @@ class Crawler
          emails = Array.new
 
          page.body.to_s.scan(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i).uniq.each do |mail|
-         #puts'=============================='
-         #puts mail
             emails << mail.downcase
          end
          emails = {emails: emails.uniq}
@@ -118,33 +116,36 @@ def sanitize_utf8(string)
 end
 
 def socialize(links)
-
+   @data = Array.new
+   
    # If facebook links are not empty, crawl them
    if(!links[:fb].empty?)
-      links[:fb].each do |fblink|
       # Crawl facebook
-      end
+      #@data << Socializer.fb(links[:fb])
    end
 
    # If facebook links are not empty, crawl them
    if(!links[:gp].empty?)
-      links[:gp].each do |fblink|
       # Crawl google plus
-      end
+      #@data << Socializer.gplus(links[:gp])
    end
 
    # If pinterest links are not empty, crawl them
    if(!links[:pt].empty?)
-      links[:pt].each do |fblink|
       # Crawl pinterest
-      end
+      #@data << Socializer.pint(links[:pt])
    end
 
    # If twitter links are not empty, crawl them
    if(!links[:tw].empty?)
-      links[:tw].each do |fblink|
       # Crawl twitter
-      end
+      @data << Socializer.tw(links[:tw])
+      #Socializer.tw(links[:tw])
+   end
+
+   if @data != nil
+      @data = {data: @data}
+      @theCompany.data = JSON.parse(@data.to_json)
    end
 
 end
