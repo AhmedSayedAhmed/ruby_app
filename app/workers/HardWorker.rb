@@ -42,7 +42,6 @@ class HardWorker
 
                else
                   aCompany.name = 'Server Down'
-                  aCompany.fblink = 'N/A'
                aCompany.save
                end
             end

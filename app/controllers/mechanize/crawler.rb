@@ -1,4 +1,5 @@
 require 'mechanize'
+require 'json'
 
 class Crawler
    # Method that reads the file line by line
@@ -34,17 +35,39 @@ class Crawler
             theCompany.description = description
 
             # Selecting all the links that has social links in it
-            fblinks = page.links_with(:href => %r{facebook})
+            fblinks = page.links_with(:href => %r{facebook.com})
             gplinks = page.links_with(:href => %r{plus.google})
-            plinks = page.links_with(:href => %r{pinterest})
-            twlinks = page.links_with(:href => %r{twitter})
+            plinks = page.links_with(:href => %r{pinterest.com})
+            twlinks = page.links_with(:href => %r{twitter.com})
+
+            # saving facebook hrefs in one array
+            facebook = Array.new
+            fblinks.each do |fb|
+               facebook << fb.href
+            end
+
+            # saving google plus hrefs in one array
+            gplus = Array.new
+            gplinks.each do |gp|
+               gplus << gp.href
+            end
+
+            # saving pinterest hrefs in one array
+            pinterest = Array.new
+            plinks.each do |p|
+               pinterest << p.href
+            end
+
+            # saving twitter hrefs in one array
+            twitter = Array.new
+            twlinks.each do |tw|
+               twitter << tw.href
+            end
 
             # Create a json object to store the social media links
-            social_links = {facebook: fblinks, gplus: gplinks, pinterest: plinks, twitter: twlinks}
-            #theCompany.social = social_links.to_json
-            #puts"========================================================"
-            #puts social_links.to_json
-            #puts"========================================================"
+            social_links = {fb: facebook, gp: gplus, pt: pinterest, tw: twitter}
+            theCompany.social = JSON.parse(social_links.to_json)
+
          # Save the object in the database
          theCompany.save
          else

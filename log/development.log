@@ -20430,3 +20430,1320 @@ MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000268391
 Completed 200 OK in 74ms (Views: 73.6ms)
 MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000009')}}
 MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021101300000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0006805229999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e435d518c5c2e4600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000192189s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e435d518c5c2e4600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000473474s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000194489s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d1300000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000465632s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0010927439999999999s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0021118879999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000776227s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000426829s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00024174s
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-19 16:10:43 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (46.2ms)
+  Rendered txt_files/new.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 354ms (Views: 338.9ms)
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-19 16:10:47 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ObEmjaLO7S+qULadg7E3aYsBsqMs2bDGGJblx0Q7Ytbe9cBh+9a+F8nLzjbBcrajQc38d086QrXqkeJq0yEn4w==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f492d2d44c0 @tempfile=#<Tempfile:/tmp/RackMultipart20160119-12358-egzcwy.txt>, @original_filename="websites.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"websites.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c3046000000'), "name"=>"websites.txt", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/websites.txt"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00032233s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c3046000001'), "social"=>{}, "link"=>"http://www.gioielleriaguidetti.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00031581599999999996s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c3046000003'), "social"=>{}, "link"=>"http://www.masonisrl.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000515961s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c3046000005'), "social"=>{}, "link"=>"http://www.iron2000.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000265466s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007'), "social"=>{}, "link"=>"http://www.dimsrl.eu\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000257764s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009'), "social"=>{}, "link"=>"http://www.luisaspagnoli.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000248792s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c304600000b'), "social"=>{}, "link"=>"http://www.parrucchieriperbambini.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000245043s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c304600000d'), "social"=>{}, "link"=>"http://www.balneariravenna.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000341627s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f'), "social"=>{}, "link"=>"http://www.facebook.com/abc\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000271941s
+Redirected to http://localhost:3000/txt_files/569e43e7518c5c3046000000
+Completed 302 Found in 30ms
+
+
+Started GET "/txt_files/569e43e7518c5c3046000000" for 127.0.0.1 at 2016-01-19 16:10:47 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"569e43e7518c5c3046000000"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000000')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000240811s
+  Rendered txt_files/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 15.9ms)
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001353461s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000798222s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000308077s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00016166899999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000473531s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000441851s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000317167s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00031208399999999996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e435d518c5c2e4600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000539802s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}, "u"=>{"$set"=>{"name"=>"2bupdated"}}, "multi"=>false, "upsert"=>false}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00033602699999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00020046000000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000306892s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000631454s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000574498s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000846397s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000005')}, "u"=>{"$set"=>{"name"=>"Iron 2000 | Infissi | Lamezia Terme", "description"=>"L'azienda Iron 2000 è sita a Lamezia Terme e produce infissi da oltre 15 anni ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00044198100000000004s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000199274s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000282504s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000b')}, "u"=>{"$set"=>{"name"=>"La Meluccia parrucchiere per bambini Roma Marino", "description"=>"La Meluccia è lo storico parrucchiere per bambini, specializzato ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000523416s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000442415s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000962589s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002728378s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002038985s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001556475s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001579185s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000345389s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000206191s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.004391087s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002973682s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001502775s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.004561145s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.066670284s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.06638412s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d1300000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000368224s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000251597s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000568975s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000265417s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001198736s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000753208s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002412731s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0037034119999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.007774925s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00115588s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000263786s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e435d518c5c2e4600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000336512s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000673199s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2e07518c5c15ab00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000922548s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000691263s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000239563s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00039198099999999996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000232018s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a4300000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00026227300000000004s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000519442s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3040518c5c18b600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000208772s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000648759s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00043351s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a4300000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001414063s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2f4d518c5c171a00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000503796s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 16:15:47 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000265181s
+  Rendered companies/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 355ms (Views: 339.3ms)
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000275139s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000352661s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000255597s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 16:15:50 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000312824s
+  Rendered companies/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 16.2ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 16:15:59 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000202454s
+  Rendered companies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 13.3ms)
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-19 16:16:00 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (64.3ms)
+  Rendered txt_files/new.html.erb within layouts/application (66.8ms)
+Completed 200 OK in 87ms (Views: 82.7ms)
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-19 16:16:04 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5r5Pi1bI1iwxeSV1OzC/c/BYYioOvjmRzxf8M8hJPJwB+qlnD9CFFFLiXd558z65OpQs/m1dy+I9EPueX1N5qQ==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007ff8a5b93688 @tempfile=#<Tempfile:/tmp/RackMultipart20160119-12612-1w2nz1y.txt>, @original_filename="websites.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"websites.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c3144000000'), "name"=>"websites.txt", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/websites.txt"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00036189599999999995s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c3144000001'), "social"=>{}, "link"=>"http://www.gioielleriaguidetti.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000326563s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000383785s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c3144000003'), "social"=>{}, "link"=>"http://www.masonisrl.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000364948s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000251581s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c3144000005'), "social"=>{}, "link"=>"http://www.iron2000.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000282544s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000228476s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c3144000007'), "social"=>{}, "link"=>"http://www.dimsrl.eu\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00027293500000000003s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00022007399999999998s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c3144000009'), "social"=>{}, "link"=>"http://www.luisaspagnoli.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00044289199999999996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000239977s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c314400000b'), "social"=>{}, "link"=>"http://www.parrucchieriperbambini.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000255561s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000b')}}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c314400000d'), "social"=>{}, "link"=>"http://www.balneariravenna.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000206309s
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00024146600000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00020466900000000002s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4524518c5c314400000f'), "social"=>{}, "link"=>"http://www.facebook.com/abc\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00024271s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+Redirected to http://localhost:3000/txt_files/569e4524518c5c3144000000
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000296335s
+Completed 302 Found in 24ms
+
+
+Started GET "/txt_files/569e4524518c5c3144000000" for 127.0.0.1 at 2016-01-19 16:16:04 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"569e4524518c5c3144000000"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000000')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00022840700000000002s
+  Rendered txt_files/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.4ms)
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}, "u"=>{"$set"=>{"name"=>"2bupdated"}}, "multi"=>false, "upsert"=>false}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000673227s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000486985s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00043126899999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00028942400000000004s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00019603600000000002s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000005')}, "u"=>{"$set"=>{"name"=>"Iron 2000 | Infissi | Lamezia Terme", "description"=>"L'azienda Iron 2000 è sita a Lamezia Terme e produce infissi da oltre 15 anni ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000891085s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000345885s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000259711s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0006536789999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000295285s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000b')}, "u"=>{"$set"=>{"name"=>"La Meluccia parrucchiere per bambini Roma Marino", "description"=>"La Meluccia è lo storico parrucchiere per bambini, specializzato ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000371373s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000674263s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000226863s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0012535839999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000434568s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001552404s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00025005s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000267466s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000200401s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000257181s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00033583500000000004s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000980169s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00017522500000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0006845649999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00030181699999999996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00053187s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000977603s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e30d7518c5c19f000000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001376877s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 16:17:13 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000370972s
+  Rendered companies/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 74ms (Views: 73.1ms)
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d1300000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002331976s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001518237s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000859758s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000395158s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001415072s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.004504895s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.003751159s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0008786870000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000907849s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000917756s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000588484s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000860375s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0008729110000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002431963s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000716355s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000389123s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000243959s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000490097s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e435d518c5c2e4600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000351016s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000204134s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000412985s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000707263s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000470032s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000183235s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000656722s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005761119999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000513131s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000564576s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000472124s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000432349s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000291121s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000244786s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000231127s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0007550269999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000244831s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021289399999999998s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e315a518c5c1b1a00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000355683s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000250377s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000209801s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000238301s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000285569s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00023962799999999998s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000816871s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001974222s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0012430219999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00058124s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00029260600000000005s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000274235s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0025408709999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0012048529999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00032484100000000003s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00025624s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00019898099999999998s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000266956s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e435d518c5c2e4600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021008s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000328536s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000520664s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000326795s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002465614s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a4300000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000587361s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000545927s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00030957s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000576804s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002803675s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00048212799999999996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00045491s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001092817s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a4300000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000558012s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000424681s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000294808s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000371773s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000232619s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0007659660000000001s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001451438s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000348206s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000409158s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0006841309999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000981156s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002807467s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000904965s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005488310000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000259411s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d1300000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00020184400000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000173841s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e335e518c5c1cd400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021700500000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00039920499999999997s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 16:30:48 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000299794s
+  Rendered companies/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 17.6ms)
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005679420000000001s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 16:31:47 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00047396799999999996s
+  Rendered companies/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 368ms (Views: 351.3ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 16:31:48 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00043714599999999996s
+  Rendered companies/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 19ms (Views: 18.3ms)
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-19 16:31:50 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (62.7ms)
+  Rendered txt_files/new.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 87ms (Views: 79.8ms)
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-19 16:31:53 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xwc9Ud+gD1dG2DVpyBQFqFabThjJGyosw2YjqzDlrTe4Q9u9hrhcbyVDTcKK14RinFcAzKr42F8xYSQGp//oAg==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007ff7ed9e2fb8 @tempfile=#<Tempfile:/tmp/RackMultipart20160119-13864-bth8o4.txt>, @original_filename="websites.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"websites.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c3628000000'), "name"=>"websites.txt", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/websites.txt"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000266912s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c3628000001'), "social"=>{}, "link"=>"http://www.gioielleriaguidetti.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00027188900000000004s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c3628000003'), "social"=>{}, "link"=>"http://www.masonisrl.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000376135s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c3628000005'), "social"=>{}, "link"=>"http://www.iron2000.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00044874199999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000449619s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c3628000007'), "social"=>{}, "link"=>"http://www.dimsrl.eu\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000367638s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c3628000009'), "social"=>{}, "link"=>"http://www.luisaspagnoli.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000316136s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c362800000b'), "social"=>{}, "link"=>"http://www.parrucchieriperbambini.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000303359s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c362800000d'), "social"=>{}, "link"=>"http://www.balneariravenna.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000270694s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f'), "social"=>{}, "link"=>"http://www.facebook.com/abc\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000207731s
+Redirected to http://localhost:3000/txt_files/569e48d9518c5c3628000000
+Completed 302 Found in 24ms
+
+
+Started GET "/txt_files/569e48d9518c5c3628000000" for 127.0.0.1 at 2016-01-19 16:31:53 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"569e48d9518c5c3628000000"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000000')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000238757s
+  Rendered txt_files/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 18.4ms)
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.003522077s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001349472s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000419014s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000805346s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00023792s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000174198s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000347692s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}, "u"=>{"$set"=>{"name"=>"2bupdated"}}, "multi"=>false, "upsert"=>false}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000301671s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00020871599999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000671817s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000235043s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000206478s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000005')}, "u"=>{"$set"=>{"name"=>"Iron 2000 | Infissi | Lamezia Terme", "description"=>"L'azienda Iron 2000 è sita a Lamezia Terme e produce infissi da oltre 15 anni ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000354641s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000003')}, "u"=>{"$set"=>{"name"=>"Masoni serramenti - Scale - Serramenti - Pavimenti - Casale Corte Cerro", "description"=>"Masoni di Casale Corte Cerro opera nel set...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000338555s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000253839s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0001921s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000249578s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000001')}, "u"=>{"$set"=>{"name"=>"Gioielli, orologi, brillanti, gioielli d'occasione, gioielli vintage e di seconda mano - Gioielleria Guidetti Bologna", "description...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000347116s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000b')}, "u"=>{"$set"=>{"name"=>"La Meluccia parrucchiere per bambini Roma Marino", "description"=>"La Meluccia è lo storico parrucchiere per bambini, specializzato ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00036921699999999997s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000009')}, "u"=>{"$set"=>{"name"=>"\r\nLuisa Spagnoli - Sito Ufficiale    ", "description"=>"Entra nel sito ufficiale Luisa Spagnoli e scopri le nuove collezioni di ab...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00037589s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e48d9518c5c3628000007')}, "u"=>{"$set"=>{"name"=>"\"DIM SRL Pescara\"  Sicurezza-Videocontrollo-Ingressi Automatici                  Per la tua tranquillità la nostra tecnologia! - H...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00032821099999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000274798s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000d')}, "u"=>{"$set"=>{"name"=>"Balneari Ravenna | Blog di Cooperativa Spiagge Ravenna", "description"=>"Blog di Cooperativa Spiagge Ravenna"}}, "multi"=>false, "up...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000364167s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000524932s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000352466s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00045519399999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000528984s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000871382s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000359836s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021352300000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000231742s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00033795799999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000359125s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e346a518c5c1f0a00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.045311646s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e435d518c5c2e4600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000520519s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000297833s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00029665299999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005289299999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000488004s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000775311s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000535276s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000316653s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000610757s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0002335s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000007')}, "u"=>{"$set"=>{"name"=>"\"DIM SRL Pescara\"  Sicurezza-Videocontrollo-Ingressi Automatici                  Per la tua tranquillità la nostra tecnologia! - H...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.0008884429999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000904671s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000917721s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005800180000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000578886s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000003')}, "u"=>{"$set"=>{"name"=>"Masoni serramenti - Scale - Serramenti - Pavimenti - Casale Corte Cerro", "description"=>"Masoni di Casale Corte Cerro opera nel set...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00029695300000000003s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000001')}, "u"=>{"$set"=>{"name"=>"Gioielli, orologi, brillanti, gioielli d'occasione, gioielli vintage e di seconda mano - Gioielleria Guidetti Bologna", "description...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000274077s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000227873s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000255105s
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-19 16:42:05 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (46.2ms)
+  Rendered txt_files/new.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 363ms (Views: 350.0ms)
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-19 16:42:08 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TZf9V+wZku3qKGHvYMxxMmNuzguYfPypbpHQgmGP4lCq0xu7tQHB1YmzGUQiD/D4qaKA3/ufDtqcltcv9pWnZQ==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fe9bd2e05c8 @tempfile=#<Tempfile:/tmp/RackMultipart20160119-14506-1c3rqv7.txt>, @original_filename="websites.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"websites.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000000'), "name"=>"websites.txt", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/websites.txt"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000430471s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000001'), "social"=>{}, "link"=>"http://www.gioielleriaguidetti.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000301257s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000001')}}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000003'), "social"=>{}, "link"=>"http://www.masonisrl.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000253725s
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00025597099999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000175783s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000005'), "social"=>{}, "link"=>"http://www.iron2000.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000225666s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000203436s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000007'), "social"=>{}, "link"=>"http://www.dimsrl.eu\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000246996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000169627s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000009'), "social"=>{}, "link"=>"http://www.luisaspagnoli.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000216865s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00036762599999999997s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000b'), "social"=>{}, "link"=>"http://www.parrucchieriperbambini.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00044041s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000280074s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000d'), "social"=>{}, "link"=>"http://www.balneariravenna.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000302153s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00019883500000000002s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f'), "social"=>{}, "link"=>"http://www.facebook.com/abc\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000227579s
+Redirected to http://localhost:3000/txt_files/569e4b40518c5c38aa000000
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+Completed 302 Found in 32ms
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000189264s
+
+
+Started GET "/txt_files/569e4b40518c5c38aa000000" for 127.0.0.1 at 2016-01-19 16:42:08 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"569e4b40518c5c38aa000000"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000000')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000193663s
+  Rendered txt_files/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 12.6ms)
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}, "u"=>{"$set"=>{"name"=>"2bupdated"}}, "multi"=>false, "upsert"=>false}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000296349s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000129605s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000366446s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000200585s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000005')}, "u"=>{"$set"=>{"name"=>"Iron 2000 | Infissi | Lamezia Terme", "description"=>"L'azienda Iron 2000 è sita a Lamezia Terme e produce infissi da oltre 15 anni ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00034434499999999997s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000001')}, "u"=>{"$set"=>{"name"=>"Gioielli, orologi, brillanti, gioielli d'occasione, gioielli vintage e di seconda mano - Gioielleria Guidetti Bologna", "description...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000369093s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0002828s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000190697s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000003')}, "u"=>{"$set"=>{"name"=>"Masoni serramenti - Scale - Serramenti - Pavimenti - Casale Corte Cerro", "description"=>"Masoni di Casale Corte Cerro opera nel set...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00035611299999999997s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000b')}, "u"=>{"$set"=>{"name"=>"La Meluccia parrucchiere per bambini Roma Marino", "description"=>"La Meluccia è lo storico parrucchiere per bambini, specializzato ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00041488699999999996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000250448s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000009')}, "u"=>{"$set"=>{"name"=>"\r\nLuisa Spagnoli - Sito Ufficiale    ", "description"=>"Entra nel sito ufficiale Luisa Spagnoli e scopri le nuove collezioni di ab...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00031694599999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000464406s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000221329s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa000007')}, "u"=>{"$set"=>{"name"=>"\"DIM SRL Pescara\"  Sicurezza-Videocontrollo-Ingressi Automatici                  Per la tua tranquillità la nostra tecnologia! - H...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000409689s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000d')}, "u"=>{"$set"=>{"name"=>"Balneari Ravenna | Blog di Cooperativa Spiagge Ravenna", "description"=>"Blog di Cooperativa Spiagge Ravenna"}}, "multi"=>false, "up...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.0005889s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000293228s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00045543199999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00023936s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000509708s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.002357598s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00020372900000000001s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000367181s
+  Rendered companies/index.html.erb within layouts/application (64.2ms)
+Completed 200 OK in 80ms (Views: 79.8ms)
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-19 16:44:28 +0200
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00027662s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000204894s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000248616s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000552833s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000533683s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00039946999999999997s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0006620420000000001s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0011152450000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a4300000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000544339s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005051599999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001048577s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d1300000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000235631s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a4300000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000465652s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000259913s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005089199999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e3fe9518c5c2846000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000759323s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00016479100000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e414a518c5c2a43000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000328224s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000752986s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000509081s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0006490840000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000267428s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000227399s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb000000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000199836s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000265923s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e48d9518c5c362800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000204024s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00024339200000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e42c8518c5c2d13000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000915525s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000387371s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4263518c5c2bb0000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000258036s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000186059s
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-19 17:00:48 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (44.3ms)
+  Rendered txt_files/new.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 351ms (Views: 337.8ms)
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-19 17:00:51 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pdU2s8QjUIZYizTb9sTxNmKrEittcbwIVek4asSaYcFCkdBfnTsDvjsQTHC0B3D8qGdc/w6STnun7j/HU4Ak9A==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f71012d0248 @tempfile=#<Tempfile:/tmp/RackMultipart20160119-15365-c6ppcs.txt>, @original_filename="websites.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"websites.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000000'), "name"=>"websites.txt", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/websites.txt"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000410045s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000001'), "social"=>{}, "link"=>"http://www.gioielleriaguidetti.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00024361699999999998s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000003'), "social"=>{}, "link"=>"http://www.masonisrl.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00034694399999999996s
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000005'), "social"=>{}, "link"=>"http://www.iron2000.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000243782s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000007'), "social"=>{}, "link"=>"http://www.dimsrl.eu\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000238606s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000009'), "social"=>{}, "link"=>"http://www.luisaspagnoli.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00036342700000000004s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000b'), "social"=>{}, "link"=>"http://www.parrucchieriperbambini.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000264786s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000d'), "social"=>{}, "link"=>"http://www.balneariravenna.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000273467s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f'), "social"=>{}, "link"=>"http://www.facebook.com/abc\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00026193099999999997s
+Redirected to http://localhost:3000/txt_files/569e4fa3518c5c3c05000000
+Completed 302 Found in 30ms
+
+
+Started GET "/txt_files/569e4fa3518c5c3c05000000" for 127.0.0.1 at 2016-01-19 17:00:51 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"569e4fa3518c5c3c05000000"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000000')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000249363s
+  Rendered txt_files/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms)
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001571207s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0020283640000000004s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001209115s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0009148250000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00044120499999999996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00022667s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00023604099999999999s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000262354s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e435d518c5c2e4600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000259472s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}, "u"=>{"$set"=>{"name"=>"2bupdated"}}, "multi"=>false, "upsert"=>false}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.001768284s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005599229999999999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00039209s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000294713s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000226126s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000250887s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000243872s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000005')}, "u"=>{"$set"=>{"name"=>"Iron 2000 | Infissi | Lamezia Terme", "description"=>"L'azienda Iron 2000 è sita a Lamezia Terme e produce infissi da oltre 15 anni ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000896148s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000009')}, "u"=>{"$set"=>{"name"=>"\r\nLuisa Spagnoli - Sito Ufficiale    ", "description"=>"Entra nel sito ufficiale Luisa Spagnoli e scopri le nuove collezioni di ab...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000411864s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000001')}, "u"=>{"$set"=>{"name"=>"Gioielli, orologi, brillanti, gioielli d'occasione, gioielli vintage e di seconda mano - Gioielleria Guidetti Bologna", "description...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000330159s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000b')}, "u"=>{"$set"=>{"name"=>"La Meluccia parrucchiere per bambini Roma Marino", "description"=>"La Meluccia è lo storico parrucchiere per bambini, specializzato ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.00064866s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000007')}, "u"=>{"$set"=>{"name"=>"\"DIM SRL Pescara\"  Sicurezza-Videocontrollo-Ingressi Automatici                  Per la tua tranquillità la nostra tecnologia! - H...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000332581s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 17:01:02 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000388898s
+  Rendered companies/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 80ms (Views: 78.8ms)
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00020947400000000002s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000216937s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c05000003')}, "u"=>{"$set"=>{"name"=>"Masoni serramenti - Scale - Serramenti - Pavimenti - Casale Corte Cerro", "description"=>"Masoni di Casale Corte Cerro opera nel set...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000394604s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000d')}, "u"=>{"$set"=>{"name"=>"Balneari Ravenna | Blog di Cooperativa Spiagge Ravenna", "description"=>"Blog di Cooperativa Spiagge Ravenna", "social"=>{"fb"=>["ht...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.007517339s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2ab7518c5c0e49000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0005330210000000001s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000401798s
+  Rendered companies/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 16ms (Views: 15.3ms)
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-19 17:01:17 +0200
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000450181s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000594797s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2b0c518c5c108100000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0007377320000000001s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000516764s
+  Rendered companies/index.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 343ms (Views: 329.0ms)
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:02:31 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:02:32 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:02:32 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-19 17:02:32 +0200
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c304600000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2ab7518c5c0e4900000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000373515s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.0014153290000000001s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001766914s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2ab7518c5c0e4900000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000523999s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000252469s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000515434s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2ab7518c5c0e4900000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000416608s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000188437s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000678252s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000212103s
+  Rendered companies/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 362ms (Views: 340.0ms)
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/scaffolds.self-3e19259cc8a21af01875ac55e734ec94062e6ad396d1f840314a7e7c4bf1dfc9.css?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/txt_files.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/txt_files.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-19 17:04:08 +0200
+
+
+Started GET "/txt_files/new" for 127.0.0.1 at 2016-01-19 17:04:11 +0200
+Processing by TxtFilesController#new as HTML
+  Rendered txt_files/_form.html.erb (10.9ms)
+  Rendered txt_files/new.html.erb within layouts/application (71.2ms)
+Completed 200 OK in 91ms (Views: 86.6ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e43e7518c5c3046000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021254s
+
+
+Started POST "/txt_files" for 127.0.0.1 at 2016-01-19 17:04:14 +0200
+Processing by TxtFilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ucUjo4onO8bEVO5begfI9qUaSAUtpQ94/+seWgoj80NegcVP0z9o/qfPlvA4xEk8b9YG0U5G/QsN7Bn3nTm2dg==", "txt_file"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f765004cc20 @tempfile=#<Tempfile:/tmp/RackMultipart20160119-15912-1td7j60.txt>, @original_filename="websites.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"txt_file[file]\"; filename=\"websites.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"txt_files", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e28000000'), "name"=>"websites.txt", "path"=>"/home/ahmed/Documents/Aptana Studio 3 Workspace/ruby_app/uploads/websites.txt"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00032992000000000004s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e28000001'), "social"=>{}, "link"=>"http://www.gioielleriaguidetti.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000284453s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000001')}}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e28000003'), "social"=>{}, "link"=>"http://www.masonisrl.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000246165s
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000371247s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e28000005'), "social"=>{}, "link"=>"http://www.iron2000.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000388261s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000400153s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e28000007'), "social"=>{}, "link"=>"http://www.dimsrl.eu\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000005')}}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000341585s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000357082s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000007')}}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e28000009'), "social"=>{}, "link"=>"http://www.luisaspagnoli.it\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000255168s
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000322025s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000009')}}
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000b'), "social"=>{}, "link"=>"http://www.parrucchieriperbambini.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000277249s
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000311849s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000263038s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000d'), "social"=>{}, "link"=>"http://www.balneariravenna.com\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.00034044500000000004s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000191468s
+MONGODB | localhost:27017 | rails_app_development.insert | STARTED | {"insert"=>"companies", "documents"=>[{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f'), "social"=>{}, "link"=>"http://www.facebook.com/abc\n"}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.insert | SUCCEEDED | 0.000295926s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+Redirected to http://localhost:3000/txt_files/569e506e518c5c3e28000000
+Completed 302 Found in 24ms
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000209443s
+
+
+Started GET "/txt_files/569e506e518c5c3e28000000" for 127.0.0.1 at 2016-01-19 17:04:14 +0200
+Processing by TxtFilesController#show as HTML
+  Parameters: {"id"=>"569e506e518c5c3e28000000"}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"txt_files", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000000')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000300703s
+  Rendered txt_files/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 12.9ms)
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}, "u"=>{"$set"=>{"name"=>"2bupdated"}}, "multi"=>false, "upsert"=>false}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000685892s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00034549099999999996s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00023698s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000187568s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000b')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000203918s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000001')}}
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000005')}, "u"=>{"$set"=>{"name"=>"Iron 2000 | Infissi | Lamezia Terme", "description"=>"L'azienda Iron 2000 è sita a Lamezia Terme e produce infissi da oltre 15 anni ...
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000350802s
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.001462973s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00021841s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000009')}, "u"=>{"$set"=>{"name"=>"\r\nLuisa Spagnoli - Sito Ufficiale    ", "description"=>"Entra nel sito ufficiale Luisa Spagnoli e scopri le nuove collezioni di ab...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.001062073s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000003')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000210833s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000b')}, "u"=>{"$set"=>{"name"=>"La Meluccia parrucchiere per bambini Roma Marino", "description"=>"La Meluccia è lo storico parrucchiere per bambini, specializzato ...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000304774s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 17:04:21 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000502722s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000001')}, "u"=>{"$set"=>{"name"=>"Gioielli, orologi, brillanti, gioielli d'occasione, gioielli vintage e di seconda mano - Gioielleria Guidetti Bologna", "description...
+  Rendered companies/index.html.erb within layouts/application (5.4ms)
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000484431s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000003')}, "u"=>{"$set"=>{"name"=>"Masoni serramenti - Scale - Serramenti - Pavimenti - Casale Corte Cerro", "description"=>"Masoni di Casale Corte Cerro opera nel set...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000393157s
+Completed 200 OK in 81ms (Views: 80.0ms)
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e28000007')}, "u"=>{"$set"=>{"name"=>"\"DIM SRL Pescara\"  Sicurezza-Videocontrollo-Ingressi Automatici                  Per la tua tranquillità la nostra tecnologia! - H...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.0008388110000000001s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00035833699999999997s
+MONGODB | localhost:27017 | rails_app_development.update | STARTED | {"update"=>"companies", "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000d')}, "u"=>{"$set"=>{"name"=>"Balneari Ravenna | Blog di Cooperativa Spiagge Ravenna", "description"=>"Blog di Cooperativa Spiagge Ravenna", "social"=>{"fb"=>["ht...
+MONGODB | localhost:27017 | rails_app_development.update | SUCCEEDED | 0.000375592s
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 17:04:28 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000487825s
+  Rendered companies/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 18ms (Views: 17.0ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 17:04:32 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000885954s
+  Rendered companies/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 27ms (Views: 26.3ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2016-01-19 17:04:38 +0200
+Processing by CompaniesController#index as HTML
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000326655s
+  Rendered companies/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 16ms (Views: 15.4ms)
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000683098s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000699566s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2ab7518c5c0e49000005')}}
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c314400000d')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000648763s
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.001398282s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000245064s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000213237s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000332568s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00025947s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000267399s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4b40518c5c38aa00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000579424s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4524518c5c3144000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000301135s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2ab7518c5c0e49000009')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000538324s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2ab7518c5c0e49000001')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000266746s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000294548s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e506e518c5c3e2800000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000259389s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2b84518c5c11bb00000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000514804s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e2ab7518c5c0e49000007')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.00020837499999999998s
+MONGODB | localhost:27017 | rails_app_development.find | STARTED | {"find"=>"companies", "filter"=>{"_id"=>BSON::ObjectId('569e4fa3518c5c3c0500000f')}}
+MONGODB | localhost:27017 | rails_app_development.find | SUCCEEDED | 0.000241325s

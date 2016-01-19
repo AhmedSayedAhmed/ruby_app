@@ -9,8 +9,8 @@
 		<tr>
 			<th>Name</th>
 			<th>Link</th>
-			<th>description</th>
-			<th>fblink</th>
+			<th>Description</th>
+			<th>Social</th>
 			<th>Data</th>
 			<th colspan="10"></th>
 		</tr>
@@ -22,7 +22,7 @@
 			<td><%= company.name %></td>
 			<td><%= company.link %></td>
 			<td><%= company.description %></td>
-			<td><%= company.fblink %></td>
+			<td><%= company.social.to_s %></td>
 			<td><%= company.data %></td>
 			
 			<td><%= link_to 'Show', company %></td>

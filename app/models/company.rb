@@ -4,6 +4,6 @@ class Company
   field :description, type: String
   field :link, type: String
   field :social,  type: Hash, default: Hash.new
-  field :data, type: Hash
-  field :fblink, type: String
+  field :data, type: Hash, default: Hash.new
+  field :emails, type: Hash, default: Hash.new
 end
