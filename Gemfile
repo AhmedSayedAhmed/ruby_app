@@ -44,6 +44,9 @@ gem 'pry-byebug'
 
 # Using the twitter gem
 gem 'twitter'
+
+# Using koala gem for facebook
+gem "koala", "~> 2.2"
     
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

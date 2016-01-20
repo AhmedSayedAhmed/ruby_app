@@ -103,6 +103,7 @@ class Crawler
       @theCompany.save
       else
       # social link
+      socialize(@theCompany.link)
       end
    end
 end
@@ -121,7 +122,7 @@ def socialize(links)
    # If facebook links are not empty, crawl them
    if(!links[:fb].empty?)
       # Crawl facebook
-      #@data << Socializer.fb(links[:fb])
+      @data << Socializer.fb(links[:fb])
    end
 
    # If facebook links are not empty, crawl them
