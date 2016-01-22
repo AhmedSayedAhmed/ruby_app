@@ -1,5 +1,15 @@
 == README
 
+<u><big>Gems Used:</big></u>:<br />
+* Mongoid: 	For mapping with mongodb. <br />
+* Sidekiq: 	For handling multiple threading for better performance.<br >
+* Koala:	To connect to Facebook Graph API.<br />
+* Mechanize:	To emulate the browser.<br />
+* Net-ping:	To check the server responce.<br />
+* Twitter:	To connect to the Twitter API.<br />
+* Google plus To connect to GPlus API.<br />
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -25,10 +35,8 @@ Things you may want to cover:
 
 == TODO
 * Fix the UI
-* Edit Company model to add other data (email, social media links)
-* Construct how thinks will look like in the data model
 * Paginate companies
-* check if link is a facebook link
+* Readme and documentation
 ------------------------------------------------------------------------------------------------------------
 * Add forbidden response to crawler 
 http://stackoverflow.com/questions/13303449/urllib2-httperror-http-error-403-forbidden/13303773#13303773

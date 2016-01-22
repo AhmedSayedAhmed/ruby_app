@@ -37,13 +37,14 @@ class TxtFilesController < ApplicationController
 
     respond_to do |format|
       if @txt_file.save
-        format.html { redirect_to @txt_file, notice: 'Txt file was successfully created.' }
+        format.html { redirect_to companies_path, notice: '' }
         format.json { render :show, status: :created, location: @txt_file }
 
         # push all links in the database
         require "#{Rails.root}/app/fileReader.rb"
         reader = FileReader.new
         reader.readFile(@txt_file.path.to_s)
+        
       else
         format.html { render :new }
         format.json { render json: @txt_file.errors, status: :unprocessable_entity }
