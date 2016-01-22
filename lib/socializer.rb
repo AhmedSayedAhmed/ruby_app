@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'twitter'
 require 'koala'
+require 'google_plus'
 
 module Socializer
    # function for crawling twitter
@@ -44,10 +45,15 @@ module Socializer
    end
 
    def self.fb(links)
-      # Configuring koala
-      oAuth = "CAACEdEose0cBABpKZAKSvIicW7vXtDPSZAHm3VHZA3feQLDomSqgO1Leun66ZAz7iMuGfCHZAZBBSgrNlz8tapXJxkhpAzZBkgvZCrEFkRljWNiPdP70hng1O6FLE8Aqt5VjmeVrq8bX8kbogHufbO8Kp6ZAj35drfy5RZBBYW2znppfx4OAQ3mYLnypHCLh5CoKAVcZBhn2lZCsRX4pEQDLffux"
-      @graph = Koala::Facebook::API.new(oAuth)
 
+      # Configuring koala for facebook
+      @oauth = Koala::Facebook::OAuth.new('1938175669741491', '5763e2f6bc9c4bfd4b88194c14ad0cd1')
+      
+      # Getting a new access token      
+      @access_token = @oauth.get_app_access_token
+      @graph = Koala::Facebook::API.new(@access_token)
+
+      # variable that will hold our daya from Facebook
       data = Array.new
 
       # looping through the given links
@@ -67,7 +73,8 @@ module Socializer
             end
 
          # retrieve the user profile
-         profile = @graph.get_object(username)
+         profile = @graph.get_object(username, :fields => "name, emails, phone, website, location, hours")
+
 
          data << profile
          end
@@ -78,6 +85,32 @@ module Socializer
    end
 
    def self.gplus(links)
+      # Configuring google_plus
+      GooglePlus.api_key = 'AIzaSyDWRsLu6ydKiYnhj-8qEL4pvZrCGEDByf0'
+
+      data = Array.new
+
+      # looping through the given links
+      links.each do |aLink|
+         if(!aLink.include?("share"))
+            # dummy array
+            dummy = aLink.split("/")
+
+            dummy.each do |x|
+               if (x.length == 21)
+               # This is the user ID
+               userID = x
+               break
+               end
+            end
+
+            person = GooglePlus::Person.get(userID)
+         data << person.attributes
+         end
+      end
+
+      data = {GPlus: data}
+      return data
 
    end
 

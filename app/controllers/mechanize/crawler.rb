@@ -128,7 +128,7 @@ def socialize(links)
    # If facebook links are not empty, crawl them
    if(!links[:gp].empty?)
       # Crawl google plus
-      #@data << Socializer.gplus(links[:gp])
+      @data << Socializer.gplus(links[:gp])
    end
 
    # If pinterest links are not empty, crawl them

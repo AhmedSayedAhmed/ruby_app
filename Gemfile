@@ -47,6 +47,9 @@ gem 'twitter'
 
 # Using koala gem for facebook
 gem "koala", "~> 2.2"
+
+# Using google_plus gem for Google plus
+gem 'google_plus', '~> 0.2.3'
     
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views

@@ -24,7 +24,7 @@ Things you may want to cover:
 * ...
 
 == TODO
-
+* Fix the UI
 * Edit Company model to add other data (email, social media links)
 * Construct how thinks will look like in the data model
 * Paginate companies
