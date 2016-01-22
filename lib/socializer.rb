@@ -48,8 +48,8 @@ module Socializer
 
       # Configuring koala for facebook
       @oauth = Koala::Facebook::OAuth.new('1938175669741491', '5763e2f6bc9c4bfd4b88194c14ad0cd1')
-      
-      # Getting a new access token      
+
+      # Getting a new access token
       @access_token = @oauth.get_app_access_token
       @graph = Koala::Facebook::API.new(@access_token)
 
@@ -72,9 +72,8 @@ module Socializer
                username = username.split("/")[1]
             end
 
-         # retrieve the user profile
-         profile = @graph.get_object(username, :fields => "name, emails, phone, website, location, hours")
-
+            # retrieve the user profile
+            profile = @graph.get_object(username, :fields => "name, emails, phone, website, location, hours")
 
          data << profile
          end
@@ -98,14 +97,16 @@ module Socializer
 
             dummy.each do |x|
                if (x.length == 21)
-               # This is the user ID
-               userID = x
-               break
+                  # This is the user ID
+                  @userID = x
                end
             end
 
-            person = GooglePlus::Person.get(userID)
-         data << person.attributes
+            person = GooglePlus::Person.get(@userID)
+            # Attributes:
+            userData = {name: person.display_name, website: person.urls, description: person.about_me, image_path: person.image}
+
+         data << userData
          end
       end
 
