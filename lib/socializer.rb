@@ -102,9 +102,17 @@ module Socializer
                end
             end
 
+            # Get the google plus user
             person = GooglePlus::Person.get(@userID)
-            # Attributes:
-            userData = {name: person.display_name, website: person.urls, description: person.about_me, image_path: person.image}
+
+            # Get the Attributes
+
+            username = person.attributes["display_name"]
+            urls = person.attributes["urls"]
+            description = person.attributes["about_me"]
+            image = person.attributes["image"]
+            
+            userData = {name: username, website: urls, description: description, image_path: image}
 
          data << userData
          end
@@ -115,7 +123,4 @@ module Socializer
 
    end
 
-   def self.pint(links)
-
-   end
 end

@@ -70,6 +70,15 @@ class Crawler
          plinks = page.links_with(:href => %r{pinterest.com})
          twlinks = page.links_with(:href => %r{twitter.com})
 
+         # Further checking for facebook links
+         allLinks = URI.extract(page.body.to_s)
+=begin
+@page.body.to_s.include?("facebook")
+s = StringScanner.new(@page.body.to_s)
+position = s.skip_until "facebook.com"
+
+=end
+
          # saving facebook hrefs in one array
          facebook = Array.new
          fblinks.each do |fb|
@@ -103,7 +112,8 @@ class Crawler
       @theCompany.save
       else
       # social link
-      socialize(@theCompany.link)
+         socialize(@theCompany.link)
+      @theCompany.save
       end
    end
 end
@@ -118,7 +128,7 @@ end
 
 def socialize(links)
    @data = Array.new
-   
+
    # If facebook links are not empty, crawl them
    if(!links[:fb].empty?)
       # Crawl facebook
@@ -133,15 +143,39 @@ def socialize(links)
 
    # If pinterest links are not empty, crawl them
    if(!links[:pt].empty?)
+
+      pt_data = Array.new
+
       # Crawl pinterest
-      #@data << Socializer.pint(links[:pt])
+      links[:pt].each do |aLink|
+      # Getting the pinterest page
+         pt = @agent.get(aLink)
+         # getting the username from the page
+         username = pt.search(".nameInner").text.strip!
+         # getting the location
+         location = pt.search(".locationWrapper").text.strip!
+         # getting the website
+         website = pt.search(".website").text.strip!
+         # getting the description
+         description = pt.search(".aboutText").text.strip!
+         # getting the image url
+         image_src = pt.search(".header > div:nth-child(1) > img:nth-child(1)").first.attributes["src"].value
+
+         # create a json-like variable
+         userData = {name: username, website: website, location: location, description: description, image_path: image_src}
+
+         # append the data
+         pt_data << userData
+      end
+      @data << {Pinterest: pt_data}
+
    end
 
    # If twitter links are not empty, crawl them
    if(!links[:tw].empty?)
       # Crawl twitter
       @data << Socializer.tw(links[:tw])
-      #Socializer.tw(links[:tw])
+   #Socializer.tw(links[:tw])
    end
 
    if @data != nil
