@@ -1,3 +1,5 @@
+<% require 'json' %>
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -11,13 +13,29 @@
 </p>
 
 <p>
-  <strong>Facebook Link:</strong>
-  <%= @company.fblink %>
+  <strong>Emails:</strong>
+<pre>
+  <%= JSON.pretty_generate(@company.emails) %>
+</pre>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @company.description %>
+</p>
+
+<p>
+  <strong>Social:</strong>
+<pre>
+  <%= JSON.pretty_generate(@company.social) %>
+</pre>
 </p>
 
 <p>
   <strong>Data:</strong>
-  <%= @company.data %>
+  <pre>
+  <%= JSON.pretty_generate(@company.data) %>
+</pre>
 </p>
 
 <%= link_to 'Edit', edit_company_path(@company) %> |

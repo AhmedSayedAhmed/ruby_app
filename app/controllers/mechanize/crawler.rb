@@ -34,6 +34,7 @@ class Crawler
 
             # Get proper encoding
             name = sanitize_utf8(name)
+            name = ActionView::Base.full_sanitizer.sanitize(name)
 
          # Saving data
          @theCompany.name = name
@@ -44,12 +45,16 @@ class Crawler
             description = page.at('meta[property="og:description"]')[:content]
             # Get proper encoding
             description = sanitize_utf8(description)
+            description = ActionView::Base.full_sanitizer.sanitize(description)
+
          # Saving data
          @theCompany.description = description
          else if (page.at('meta[property="description"]') != nil)
                description = page.at('meta[property="description"]')[:content]
                # Get proper encoding
                description = sanitize_utf8(description)
+               description = ActionView::Base.full_sanitizer.sanitize(description)
+
             # Saving data
             @theCompany.description = description
             end
@@ -58,7 +63,9 @@ class Crawler
          emails = Array.new
 
          page.body.to_s.scan(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i).uniq.each do |mail|
+            if !mail.include? ".png"
             emails << mail.downcase
+            end
          end
          emails = {emails: emails.uniq}
          # Create a json object to store the email addresses
@@ -72,12 +79,6 @@ class Crawler
 
          # Further checking for facebook links
          allLinks = URI.extract(page.body.to_s)
-=begin
-@page.body.to_s.include?("facebook")
-s = StringScanner.new(@page.body.to_s)
-position = s.skip_until "facebook.com"
-
-=end
 
          # saving facebook hrefs in one array
          facebook = Array.new
@@ -152,12 +153,20 @@ def socialize(links)
          pt = @agent.get(aLink)
          # getting the username from the page
          username = pt.search(".nameInner").text.strip!
+         username = ActionView::Base.full_sanitizer.sanitize(username)
+
          # getting the location
          location = pt.search(".locationWrapper").text.strip!
+         location = ActionView::Base.full_sanitizer.sanitize(location)
+
          # getting the website
          website = pt.search(".website").text.strip!
+         website = ActionView::Base.full_sanitizer.sanitize(website)
+
          # getting the description
          description = pt.search(".aboutText").text.strip!
+         description = ActionView::Base.full_sanitizer.sanitize(description)
+
          # getting the image url
          image_src = pt.search(".header > div:nth-child(1) > img:nth-child(1)").first.attributes["src"].value
 

@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
@@ -14,6 +13,9 @@ gem "moped", github: "mongoid/moped"
 
 # Using Mechaniaze
 gem 'mechanize'
+
+# For pagination
+gem 'kaminari'
 
 # Gem to ping sites
 gem 'net-ping', '~> 1.7', '>= 1.7.8'
@@ -50,11 +52,11 @@ gem "koala", "~> 2.2"
 
 # Using google_plus gem for Google plus
 gem 'google_plus', '~> 0.2.3'
-    
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
 
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+group :development do
+# Access an IRB console on exception pages or by using <%= console %> in views
+   gem 'web-console', '~> 2.0'
+
+   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+   gem 'spring'
 end

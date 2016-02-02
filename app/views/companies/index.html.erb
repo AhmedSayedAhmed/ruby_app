@@ -1,9 +1,11 @@
 <p id="notice">
 	<%= notice %>
 </p>
+<% require 'json' %>
 
 <h1>Listing Companies</h1>
-
+<%= paginate @companies %>
+<br /><br />
 <table>
 	<thead>
 		<tr>
@@ -36,5 +38,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Company', new_company_path %>

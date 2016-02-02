@@ -111,7 +111,11 @@ module Socializer
             urls = person.attributes["urls"]
             description = person.attributes["about_me"]
             image = person.attributes["image"]
-            
+
+            # Sanitizing for false html tags
+            username = ActionView::Base.full_sanitizer.sanitize(username)
+            description = ActionView::Base.full_sanitizer.sanitize(description)
+
             userData = {name: username, website: urls, description: description, image_path: image}
 
          data << userData
