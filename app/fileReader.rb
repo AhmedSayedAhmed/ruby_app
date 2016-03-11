@@ -12,6 +12,7 @@ class FileReader
 			f.each_line do |line|
 			# Removing the end of line character
 			line.gsub('\n','')
+			line.gsub(',','')
 
 				# Scheduling a job for the Hardworker class
 				# to Update the database with crawled values
